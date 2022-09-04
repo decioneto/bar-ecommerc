@@ -15,5 +15,8 @@
     "@wordpress/scripts": "^24.0.0",
     "install": "^0.13.0",
     "npm": "^8.19.0"
+  },
+  "dependencies": {
+    "feather-icons": "^4.29.0"
   }
 }

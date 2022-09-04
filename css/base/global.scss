@@ -29,51 +29,31 @@
     --body-bold: 700;
   
     //FONT LINE HEIGHT
-    --h1-height: 4.5rem;
-    --h2-height: 3rem;
-    --h3-height: 2.25rem;
-    --h4-height: 1.875rem;
-    --h5-height: 1.5rem;
-    --h6-height: 1.5rem;
+    --h1-height: 8.25rem;
+    --h2-height: 5.25rem;
+    --h3-height: 4.5rem;
+    --h4-height: 2.25rem;
+    --h5-height: 1.875rem;
+    --h6-height: 1.687rem;
   
+    --body-xl-height: 2.25rem;
     --body-lg-height: 1.687rem;
     --body-md-height: 1.5rem;
     --body-sm-height: 1.312rem;
     --body-xs-height: 1.125rem;
   
     // COLOR STYLES
-    --black: #000;
-    --gray-10: #1f1b29;
-    --gray-25: #2e2a36;
-    --gray-50: #616161;
-    --gray-100: #99969e;
-    --gray-200: #bab9bd;
-    --gray-300: #dedee0;
-    --gray-400: #ececee;
-    --gray-500: #f3f3f5;
-    --gray-600: #fafafa;
+    --black: #161616;
+    --gray-10: #2A2A2A;
+    --gray-25: #303030;
+    --gray-50: #4B4B4B;
+    --gray-100: #8E8E8E;
+    --gray-200: #A4A4A4;
+    --gray-600: #FDFFFC;
   
-    --purple-100: #5603ad;
-    --purple-200: #8367c7;
-    --purple-300: #b99cff;
+    --leather-100: #CA8F65;
+    --leather-200: #F4DECE;
   
-    --dark-purple-100: #1d0b31;
-    --dark-purple-200: #6a637c;
-    --dark-purple-300: #cdc6dd;
-  
-    --lime-100: #b3e9c7;
-    --lime-200: #c2f8cb;
-    --lime-300: #f0fff1;
-  
-    --primary-gradient: linear-gradient(
-      95.5deg,
-      var(--purple-100) 4.7%,
-      var(--lime-100) 123.14%
-    );
-  
-    //EFECTS STYLES
-    --button-shadow: -4px 4px 16px rgba(39, 39, 39, 0.21);
-    --button-purple-shadow: -4px 4px 16px rgba(131, 103, 199, 0.4);
   
     //SCREEN SIZES
   
@@ -97,5 +77,12 @@
 }
 
 body {
-    font-family: var(--body-font-family)
+    font-family: var(--body-font-family);
+    background-color: var(--gray-25);
+    color: var(--gray-600);
+    line-height: var(--body-md-height);
+}
+
+button {
+    cursor: pointer;
 }
