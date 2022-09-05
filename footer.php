@@ -1,4 +1,5 @@
-<?php wp_footer()?>
+    <div class="backdrop-modal"></div>
+    <?php wp_footer()?>
 
 </body>
 </html>

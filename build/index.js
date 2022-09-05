@@ -1,6 +1,48 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/modules/MenuMobile.js":
+/*!***********************************!*\
+  !*** ./src/modules/MenuMobile.js ***!
+  \***********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+class MenuMobile {
+  constructor() {
+    this.menu = document.querySelector(".menu-dialog");
+    this.menuTrigger = document.querySelector(".menu-trigger");
+    this.backdropModal = document.querySelector(".backdrop-modal");
+    this.closeMenuButton = document.querySelector(".close-menu");
+    this.events();
+  }
+
+  events() {
+    this.menuTrigger.addEventListener("click", () => this.openMenu());
+    this.closeMenuButton.addEventListener("click", () => this.closeMenu());
+  }
+
+  openMenu() {
+    this.menu.classList.add("open");
+    this.backdropModal.classList.add("modal-opened");
+    console.log("oi");
+  }
+
+  closeMenu() {
+    this.menu.classList.remove("open");
+    this.backdropModal.classList.remove("modal-opened");
+  }
+
+}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (MenuMobile);
+
+/***/ }),
+
 /***/ "./node_modules/feather-icons/dist/feather.js":
 /*!****************************************************!*\
   !*** ./node_modules/feather-icons/dist/feather.js ***!
@@ -2510,9 +2552,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _css_styles_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../css/styles.scss */ "./css/styles.scss");
 /* harmony import */ var feather_icons__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! feather-icons */ "./node_modules/feather-icons/dist/feather.js");
 /* harmony import */ var feather_icons__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(feather_icons__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _modules_MenuMobile__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/MenuMobile */ "./src/modules/MenuMobile.js");
+
 
 
 feather_icons__WEBPACK_IMPORTED_MODULE_1___default().replace();
+const menuMobile = new _modules_MenuMobile__WEBPACK_IMPORTED_MODULE_2__["default"]();
 })();
 
 /******/ })()
