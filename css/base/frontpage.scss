@@ -1,0 +1,89 @@
+.hero-header {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 150px;
+        background: linear-gradient(180deg, rgba(48, 48, 48, 0) 1.22%, rgba(48, 48, 48, 0.83) 48.35%, #303030 82.28%);
+    }
+
+    .bg-image {
+        background-size: cover;
+        background-position: top, center;
+        background-repeat: no-repeat;
+        height: 100%;
+        margin-top: -7.5rem;
+
+        @media(max-width: 1080px) {
+            margin-top: -10.5rem;
+        }
+    }
+
+    .hero-header__info {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .info__left {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            flex: 1;
+
+            h1 {
+                color: var(--leather-200);
+            }
+
+            .subtitle {
+                font-size: 1.5rem;
+                font-weight: bold;
+                text-transform: uppercase;
+                color: var(--leather-200);
+            }
+
+            p {
+                margin: 0;
+                color: var(--gray-100);
+                font-size: var(--body-lg);
+                line-height: var(--body-lg-height);
+            }
+
+            .info__action {
+                display: flex;
+                gap: 2.5rem;
+                align-items: center;
+
+                div {
+                    font-size: 1.5rem;
+                    color: var(--leather-100);
+                }
+            }
+        }
+
+        .info__right {
+            flex: 2;
+
+            img {
+                margin-left: auto;
+                display: block;
+                width: 100%;
+                max-width: 550px;
+            }
+        }
+    }
+}
+
+#tradition {
+    padding: 4.5rem 0;
+}

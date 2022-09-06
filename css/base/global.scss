@@ -12,7 +12,7 @@
     --h6-font-size: 1.125rem;
   
     --body-xl: 1.5rem;
-    --body-lg: 1.25rem;
+    --body-lg: 1.125rem;
     --body-md: 1rem;
     --body-sm: 0.875rem;
     --body-xs: 0.75rem;
@@ -81,8 +81,30 @@ body {
     background-color: var(--gray-25);
     color: var(--gray-600);
     line-height: var(--body-md-height);
+    min-height: 100vh;
+
+    &::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background-color: var(--gray-25);
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: var(--leather-100);
+    }
+
+    & ::selection {
+      background-color: var(--leather-100);
+      color: var(--gray-600);
+    }
 }
 
 button {
     cursor: pointer;
+}
+
+input, textarea, button, select {
+  font-family: var(--body-font-family);
 }
